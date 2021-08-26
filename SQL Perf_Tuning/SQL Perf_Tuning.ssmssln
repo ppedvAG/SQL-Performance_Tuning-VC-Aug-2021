@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# SQL Server Management Studio Solution File, Format Version 18.00
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "SQL Perf_Tuning", "SQL Perf_Tuning\SQL Perf_Tuning.ssmssqlproj", "{A298105F-0118-41D3-81D5-BA2CDB9F8560}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|Default = Default|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A298105F-0118-41D3-81D5-BA2CDB9F8560}.Default|Default.ActiveCfg = Default
+		{134CDC4B-4077-4EB6-B216-4CB4A4F55502}.Default|Default.ActiveCfg = Default
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D3F8C5F5-B12E-4F63-AB0A-BE47FB8412AB}
+	EndGlobalSection
+EndGlobal
