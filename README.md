@@ -7,4 +7,13 @@
 * DatenbankSettings
 * DB Design (logische)
 * DB Design (physikalisch)
+* Dateigruppen
+* indizierte Sicht
+
+# Tag 2
+* Wiederholung Tag 1
+* Monitoring einrichten
+* Partitionierung
+* Indizes und Wartung
+* Analyse Monitoring
  

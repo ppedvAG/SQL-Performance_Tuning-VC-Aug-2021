@@ -44,7 +44,7 @@ select * from UMSATZ where jahr = 2018
 --im Plan sieht man, dass er nach den Einschränkungen 
 --nur noch die Tabelle verwendet, in der die Daten sein könnten..
 
-select * from UMSATZ where jahr= 2018
+select * from UMSATZ where jahr= 2019
 select * from UMSATZ where id= 2018
 
 --Aber was ist mit INS UP DEL
