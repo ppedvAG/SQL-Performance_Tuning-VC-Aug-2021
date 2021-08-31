@@ -58,7 +58,16 @@ dbcc showcontig()
 --bei 1 MIO
 --4 GB + 110MB => statt 8 GB (HDD und RAM)--> 4,1GB RAM und HDD.. aber APP geht nicht mehr
 
+
+--Besser Alternative
+--der dbcc showcontig ist als depricated markiert
+--mehr Informationen über ...
+--auch Infos zu Indizes
+select * from sys.dm_db_index_physical_stats
+	(db_id(), object_id('t1'), NULL, NULL, 'detailed')
+
+
+
+
 --Idee Kompression
-
-
 

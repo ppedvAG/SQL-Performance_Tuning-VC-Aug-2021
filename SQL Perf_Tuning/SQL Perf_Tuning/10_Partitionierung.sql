@@ -1,5 +1,9 @@
 /*
 
+Idee : Prinzip der part Sicht auf rein physikalischer Ebene nachbilden
+--Vorteil: Anwendungen funktionieren nahtlos weiter...
+
+
 f(117)--> 2
 
 

@@ -9,6 +9,11 @@ row
 page
 Extent
 Tab
+-ohne Indizes wird der LOCK entweder mind auf eine Partition sein, 
+--falls vorhanden oder die gesamte Tabelle.
+--!! also auch beim Ändern eines Datensatzes wird evtl die gesamte Tabelle gesperrt!!
+
+-->Verhindern von forward_record_counts durch CLustered Indizes
 
 
 extreme Reduzierung der IO--> RAM-->CPU
@@ -129,10 +134,67 @@ group by Country, City
 
 select * from ku where freight < 1
 
+--ColumnStore
 
-select * into ku1 from ku
+select * into ku1 from ku -- exakte Kopie hat keinerlei Indizes
 
 
-select country, SUM(quantity) from ku1 
+select country, SUM(quantity) from ku
 where OrderDate between '1.1.1998' and '31.12.1998' 
 group by country 
+
+CREATE NONCLUSTERED INDEX NIXDEMO
+ON [dbo].[KU] ([OrderDate])
+INCLUDE ([Country],[Quantity])
+
+--1750 Seiten 30ms CPU und Dauer
+
+--reiner IX SEEK (abdeckender IX)
+select country, SUM(quantity) from ku1
+where OrderDate between '1.1.1998' and '31.12.1998' 
+group by country 
+
+
+
+CREATE CLUSTERED COLUMNSTORE INDEX [CSIX] 
+ON [dbo].[ku1] WITH (DROP_EXISTING = OFF, COMPRESSION_DELAY = 0)
+
+select country, SUM(quantity) from ku1
+where OrderDate between '1.1.1998' and '31.12.1998' 
+group by country 
+
+--KU Tabelle Gesamt 500MB
+
+--KU1: Tabelle Gesamt: 4.2 MB ???
+-- stimmts oder stimmts nicht?
+--Es stimmt!
+
+--Gründe gibts für kleiner?
+--Kompression.. normalerweise 40-60%
+
+--nun Archivkompression... nun 3,2 MB statt 4,2 MB statt 500MB
+
+--und das kommt so in den RAM
+
+select country, city, SUM(quantity) from ku
+where freight < 0.2
+group by country , city
+
+--GENIAL!!!
+
+--Wo ist der Haken....????!!!!!
+
+--Problem bei INS UP DEL... HEAP !
+
+-- Wartung
+
+--REBUILD REORG
+--Fragmentierungsgrad bei normalen IX
+-- ReOrg ab 10%
+--Rebuild ab 30%
+--bei CS IX eher der deltastore
+
+--Wartungsplan.. kann es bei Express nicht geben
+--SSIS Paket
+
+--Wie finde ich die richtige Strategie-- Datenbankoptimierungsratgeber

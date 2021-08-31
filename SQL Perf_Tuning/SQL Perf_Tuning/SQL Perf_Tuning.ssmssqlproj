@@ -91,10 +91,77 @@
           <AssociatedConnUserName />
           <FullPath>11_Indizes.sql</FullPath>
         </FileNode>
+        <FileNode Name="12_Index_Wartung.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>12_Index_Wartung.sql</FullPath>
+        </FileNode>
+        <FileNode Name="X__Locks finden.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KAIRO:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KAIRO</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>X__Locks finden.sql</FullPath>
+        </FileNode>
+        <FileNode Name="X_Fehlende Indizes.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>X_Fehlende Indizes.sql</FullPath>
+        </FileNode>
+        <FileNode Name="X_Glenn Berry DMVs.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:KAIRO:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>KAIRO</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>X_Glenn Berry DMVs.sql</FullPath>
+        </FileNode>
+        <FileNode Name="X_Largest_IOS.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>X_Largest_IOS.sql</FullPath>
+        </FileNode>
+        <FileNode Name="X_SQL Script to list VLF counts for all online databases.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>X_SQL Script to list VLF counts for all online databases.sql</FullPath>
+        </FileNode>
+        <FileNode Name="X_Überflüssige Indizes.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>X_Überflüssige Indizes.sql</FullPath>
+        </FileNode>
+        <FileNode Name="X_Waits.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>X_Waits.sql</FullPath>
+        </FileNode>
       </Items>
     </LogicalFolder>
     <LogicalFolder Name="Sonstiges" Type="3" Sorted="true">
-      <Items />
+      <Items>
+        <FileNode Name="FirstResponderKit.zip">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>FirstResponderKit.zip</FullPath>
+        </FileNode>
+        <FileNode Name="SQL Perf_Tuning.ssmssqlproj">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>SQL Perf_Tuning.ssmssqlproj</FullPath>
+        </FileNode>
+        <FileNode Name="SQLPerfmonVorlage.xml">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>SQLPerfmonVorlage.xml</FullPath>
+        </FileNode>
+      </Items>
     </LogicalFolder>
   </Items>
 </SqlWorkbenchSqlProject>

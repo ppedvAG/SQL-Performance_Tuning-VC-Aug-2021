@@ -6,11 +6,11 @@ Initialgröße der DB
 SQL 2014      5        2     Daten: 1 MB  Log: 10%    
 SQL 2016      8        8     Daten: 64 MB  Log: 64 MB
 
---fast alle Werte sind (total) unsinnig
---korrekter wäre: mach die DB so groß , wie sie in 3 Jahren sein würde
+--fast alle Werte sind  unsinnig
+--korrekter wäre: mach die DB so groß , wie sie in 3 Jahren sein wird
+--evtl messen mit Perfmon SQL Server:Datenbanken Größe der Dateien 1*täglich
 
 --BACKUP? ist nicht von der Größe betroffen, sondern vom Inhalt
-
 
 
 
